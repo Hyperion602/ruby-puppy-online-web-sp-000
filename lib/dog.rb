@@ -10,6 +10,10 @@ class Dog
     @@all
   end
 
+  def save
+    @@all << self
+  end
+
   def self.print_all
     @@all.each { |names| puts "#{names}"}
   end
